@@ -43,6 +43,7 @@
 
                 }
             </ul>
+            <div><h4>@Html.ActionLink("Aggiungi una nuova pizza","PizzaForm","Pizza")</h4></div>
         </div>
         <div class="container d-flex flex-wrap">
             <div class="row">
@@ -52,7 +53,7 @@
                         foreach (var p in Model.listaDiPizze)
                         {
                             <div class="card">
-                                <img src="@p.Foto" class="" alt="@p.Nome" />
+                                <img src="@p.sFoto" class="" alt="@p.Nome" />
                                 <h1 class="titolo">@p.Nome</h1>
                                 <p class="descrizione">@p.Descrizione</p>
                                 <p class="prezzo"> @p.Prezzo euro</p>
